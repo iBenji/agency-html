@@ -1,3 +1,5 @@
+@import "/css/adapt.css";
+
 html {
   box-sizing: border-box;
 }
@@ -602,71 +604,4 @@ body {
 .footer__icon:hover {
   fill: #fff;
   background-color: #d10000;
-}
-
-@media (max-width: 1024px) {
-
-  .top__content,
-  .provide,
-  .products__card__menu,
-  .team__members,
-  .member__profiles__list {
-    justify-content: center;
-  }
-
-  .member__text {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0px;
-  }
-
-  .top__video {
-    margin-top: 40px;
-    width: 100%;
-  }
-
-  .provide__features {
-    margin-top: 40px;
-  }
-
-  .product__menu {
-    gap: 14px;
-  }
-
-  .team__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .subscribe__title {
-    line-height: 62px;
-  }
-
-  .touch__contact {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .touch__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .get__contact {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .get__contact-subtitle,
-  .get__contact-title {
-    width: fit-content;
-  }
-
-  .footer {
-    padding: 47px 31px;
-  }
 }

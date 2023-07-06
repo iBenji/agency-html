@@ -619,6 +619,81 @@ body {
   background-color: #d10000;
 }
 
+/* Tablet + */
+
+@media (max-width: 1024px) {
+
+  .main,
+  .top__content {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .top__content,
+  .provide,
+  .products__card__menu,
+  .team__members,
+  .member__text>.member__profiles__list {
+      justify-content: center;
+  }
+
+  .team__members>.member__text {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0px;
+  }
+
+  .top__video {
+      margin-top: 40px;
+      width: 100%;
+  }
+
+  .provide__features {
+      margin-top: 40px;
+  }
+
+  .product__menu {
+      gap: 14px;
+  }
+
+  .team__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .subscribe__text>.subscribe__title {
+      line-height: 44px;
+  }
+
+  .touch__contact {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .touch__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .get__contact {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+
+  .get__contact-subtitle,
+  .get__contact-title {
+      width: fit-content;
+  }
+
+  .footer {
+      padding: 47px 31px;
+  }
+}
+
 @media (max-width: 800px) {
   .menu__burger {
       display: block;
@@ -630,5 +705,79 @@ body {
   
   .menu.active {
       display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .team__members>.member__text {
+      margin-left: 0;
+  }
+
+  .subscribe__form {
+      padding-right: 25px;
+      padding-left: 25px;
+  }
+}
+
+/* Phone + */
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .menu__list>.menu__link {
+      padding: 27px 12px;
+  }
+
+  .top__info {
+      width: 100%;
+  }
+
+  .top__info>.title {
+      font-size: 30px;
+      line-height: 45px;
+  }
+
+  .products__nav>.product__menu {
+      gap: 15px;
+  }
+
+  .products__card__menu>.products__card__list,
+  .product__card__item {
+      width: 150px;
+      height: 150px;
+  }
+
+  .member__profiles__list>.member__profile__link .member__img {
+      width: 150px;
+      height: 150px;
+  }
+
+  .subscribe__text>.subscribe__title {
+      font-size: 22px;
+      line-height: 32px;
+  }
+
+  .subscribe__text>.subscribe__subtitle {
+      font-size: 12.9953px;
+  }
+
+  .subscribe__form {
+      flex-wrap: wrap;
+  }
+
+  .subscribe__button {
+      margin-bottom: 20px;
+  }
+
+  .touch__contact>.touch__form {
+      grid-template-columns: none;
+  }
+
+  .get__contact-subtitle {
+      width: -webkit-fill-available !important;
+  }
+
+  .footer {
+      padding: 47px 31px !important;
+      flex-direction: column;
+      gap: 20px;
   }
 }

@@ -15,6 +15,10 @@
     <section class="top center">
         <header class="header">
             <nav class="menu__nav">
+                <div class="menu__burger">
+                    <i class="fa-solid fa-bars fa-2xl menu__burger-line" style="color: #ffffff;"></i></div>
+
+                </div>
                 <ul class="menu">
                     <li class="menu__list">
                         <a class="menu__link menu__link-active" href="#">home</a>
@@ -245,12 +249,10 @@
                 <div class="team__spacer"></div>
             </div>
             <div class="touch__contact">
-                <form class="touch__form" action="#" method="post">
-                    <input class="touch__input" type="text" name="touchname" id="touchnameid" placeholder="Name"
-                        required>
-                    <input class="touch__input" type="email" name="touchmail" id="touchmailid" placeholder="Your Mail"
-                        required>
-                    <textarea class="touch__input touch__textarea" placeholder="Type your message" required></textarea>
+                <form class="touch__form" action="send_message.php" method="post">
+                    <input class="touch__input" type="text" name="touchname" id="touchnameid" placeholder="Name" required>
+                    <input class="touch__input" type="email" name="touchmail" id="touchmailid" placeholder="Your Mail" required>
+                    <textarea class="touch__input touch__textarea" name="message" placeholder="Type your message" required></textarea>
                     <button class="button touch__button" type="submit">send message</button>
                 </form>
                 <div class="get__contact">

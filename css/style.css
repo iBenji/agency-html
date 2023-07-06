@@ -1,5 +1,6 @@
 @import "/css/adapt.css";
 
+
 html {
   box-sizing: border-box;
 }
@@ -62,6 +63,18 @@ body {
 
 .menu__link-active {
   background-color: #FF3F40;
+}
+
+.menu__burger {
+  display: none;
+  cursor: pointer;
+}
+
+.menu__burger-line {
+  padding: 30px 30px;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
 }
 
 .top__content {
@@ -604,4 +617,18 @@ body {
 .footer__icon:hover {
   fill: #fff;
   background-color: #d10000;
+}
+
+@media (max-width: 800px) {
+  .menu__burger {
+      display: block;
+  }
+  
+  .menu {
+      display: none;
+  }
+  
+  .menu.active {
+      display: block;
+  }
 }

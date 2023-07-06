@@ -86,7 +86,7 @@
 
 /* Phone + */
 
-@media (min-width: 375px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
     .menu__list>.menu__link {
         padding: 27px 12px;
     }
@@ -96,7 +96,7 @@
     }
 
     .top__info>.title {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 45px;
     }
 
@@ -136,7 +136,13 @@
         grid-template-columns: none;
     }
 
+    .get__contact-subtitle {
+        width: -webkit-fill-available !important;
+    }
+
     .footer {
         padding: 47px 31px !important;
+        flex-direction: column;
+        gap: 20px;
     }
 }
